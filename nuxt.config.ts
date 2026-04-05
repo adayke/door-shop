@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     preset: 'static',
+    prerender: {
+      failOnError: false,
+      crawlLinks: true,
+    },
   },
   routeRules: {
     '/**': { prerender: true },
