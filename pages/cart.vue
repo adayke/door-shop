@@ -2,7 +2,7 @@
 import { useCartStore } from "~/stores/cart";
 
 useHead({
-  title: "Корзина — ЭталонЛюкс",
+  title: "Корзина — АйбоЛюкс",
   meta: [{ name: "robots", content: "noindex" }],
 });
 

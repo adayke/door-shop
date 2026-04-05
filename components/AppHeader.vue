@@ -68,7 +68,7 @@
             <div
               class="font-display text-xl font-semibold text-white leading-tight tracking-wide"
             >
-              ЭталонЛюкс
+              АйбоЛюкс
             </div>
             <div
               class="text-xs text-gold/80 tracking-widest uppercase font-body"

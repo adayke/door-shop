@@ -43,11 +43,11 @@ const related = computed<Product[]>(() => relatedData.value?.data ?? [])
 
 // SEO
 useHead({
-  title: computed(() => `${product.value?.name ?? ''} — ЭталонЛюкс`),
+  title: computed(() => `${product.value?.name ?? ''} — АйбоЛюкс`),
   meta: computed(() => [
     {
       name: 'description',
-      content: product.value?.description ?? `Купить ${product.value?.name} в интернет-магазине ЭталонЛюкс. Цена: ${product.value ? format(product.value.price) : ''}.`,
+      content: product.value?.description ?? `Купить ${product.value?.name} в интернет-магазине АйбоЛюкс. Цена: ${product.value ? format(product.value.price) : ''}.`,
     },
     { property: 'og:title', content: product.value?.name ?? '' },
     { property: 'og:image', content: getImageUrl(product.value?.images?.[0], { width: 1200, height: 630 }) },

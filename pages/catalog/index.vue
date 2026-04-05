@@ -7,14 +7,14 @@ const { getProducts, getFilterOptions } = useDirectus();
 const { format } = useFormatPrice();
 
 useHead({
-  title: "Каталог дверей и фурнитуры — ЭталонЛюкс",
+  title: "Каталог дверей и фурнитуры — АйбоЛюкс",
   meta: [
     {
       name: "description",
       content:
         "Широкий каталог дверей: межкомнатные, входные, ручки, замки, фурнитура. Фильтры по цене, материалу, бренду.",
     },
-    { property: "og:title", content: "Каталог — ЭталонЛюкс" },
+    { property: "og:title", content: "Каталог — АйбоЛюкс" },
   ],
 });
 

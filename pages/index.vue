@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "ЭталонЛюкс — Премиальные двери и фурнитура в Астана",
+  title: "АйбоЛюкс — Премиальные двери и фурнитура в Астана",
   meta: [
     {
       name: "description",
@@ -9,7 +9,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "ЭталонЛюкс — Премиальные двери и фурнитура",
+      content: "АйбоЛюкс — Премиальные двери и фурнитура",
     },
     {
       property: "og:description",

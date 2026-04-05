@@ -23,7 +23,7 @@
             </div>
             <div>
               <div class="font-display text-xl font-semibold text-white">
-                ЭталонЛюкс
+                АйбоЛюкс
               </div>
               <div class="text-xs text-gold/70 tracking-widest uppercase">
                 Premium Doors
@@ -190,7 +190,7 @@
         class="py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream-300/40"
       >
         <p>
-          &copy; {{ new Date().getFullYear() }} ЭталонЛюкс. Все права защищены.
+          &copy; {{ new Date().getFullYear() }} АйбоЛюкс. Все права защищены.
         </p>
         <div class="flex items-center gap-5">
           <a href="#" class="hover:text-gold/60 transition-colors"
