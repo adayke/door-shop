@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build
+.nuxt/
+.output/
+dist/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

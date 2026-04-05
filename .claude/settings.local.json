@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(kill 44499)",
+      "Bash(npm install:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(npm view:*)",
+      "Bash(python3 -m json.tool)",
+      "Bash(xargs -I{} sh -c 'echo {}; grep \"\\\\\"version\\\\\"\" {}')",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('dependencies',{}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; v=json.load\\(sys.stdin\\); print\\('\\\\n'.join\\(v[-10:]\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d['version'], d.get\\('dependencies',{}\\).get\\('postcss',''\\)\\)\")",
+      "Bash(npm why:*)",
+      "Bash(npm --version)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('overrides',{}\\)\\)\")",
+      "Bash(command -v nvm)",
+      "Bash(python3 -c \"import sys; content=sys.stdin.read\\(\\); print\\('HTML' if '<!DOCTYPE' in content or '<html' in content else content[:200]\\)\")"
+    ]
+  }
+}
