@@ -1,6 +1,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  // Статическая генерация для GitHub Pages
+  ssr: true,
+  nitro: {
+    preset: 'static',
+  },
+  routeRules: {
+    '/**': { prerender: true },
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
@@ -17,20 +26,14 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       htmlAttrs: { lang: 'ru' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com',
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: '',
-        },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap',
@@ -46,13 +49,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    urls: [
-      '/',
-      '/catalog',
-      '/about',
-      '/contacts',
-      '/delivery',
-    ],
+    urls: ['/', '/catalog', '/about', '/contacts', '/delivery'],
   },
 
   typescript: {
